@@ -435,6 +435,7 @@ class NissanConnect {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_USERAGENT, ' ');
 
         $result = curl_exec($ch);
         if ($result === FALSE) {
