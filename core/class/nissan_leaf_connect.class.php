@@ -22,7 +22,7 @@ require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 require_once dirname(__FILE__) . '/../../3rdparty/nissan-connect-php/NissanConnect.class.php';
 
 class nissan_leaf_connect extends eqLogic {
-      private static $_templateArray = array();
+      protected static $_templateArray = array();
 
       public static  function cron15() {
           log::add('nissan_leaf_connect', 'debug', 'in cron');
